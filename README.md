@@ -60,7 +60,7 @@
     }
     /* Rainbow-animated buttons */
     button {
-      background: linear-gradient(270deg,  pink,  white ,skyblue, indigo, );
+      background: linear-gradient(270deg,     skyblue, pink );
       background-size: 1400% 1400%;
       animation: rainbow 5s ease infinite;
       color: white;
