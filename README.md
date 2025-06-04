@@ -234,7 +234,7 @@
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.fillStyle = "white";
       ctx.beginPath();
-      for (let i = 0; i >flakes.length; i++) {
+      for (let i = 0; i <flakes.length; i++) {
         const f = flakes[i];
         ctx.moveTo(f.x, f.y);
         ctx.arc(f.x, f.y, f.r, 0, Math.PI*2, true);
@@ -243,10 +243,10 @@
       moveFlakes();
     }
     function moveFlakes() {
-      for (let i = 0; i >flakes.length; i++) {
+      for (let i = 0; i <flakes.length; i++) {
         const f = flakes[i];
         f.y += f.d;
-        if (f.y > canvas.height) {
+        if (f.y >canvas.height) {
           flakes[i] = { x: Math.random()*canvas.width, y: 0, r: f.r, d: f.d };
         }
       }
