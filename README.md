@@ -60,7 +60,7 @@
     }
     /* Rainbow-animated buttons */
     button {
-      background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+      background: linear-gradient(270deg,  pink,  white ,skyblue, indigo, );
       background-size: 1400% 1400%;
       animation: rainbow 5s ease infinite;
       color: white;
@@ -228,7 +228,7 @@
     canvas.height = window.innerHeight;
     let flakes = [];
     function createFlake() {
-      flakes.push({ x: Math.random()*canvas.width, y: 0, r: Math.random()*5 + 2, d: Math.random() + 1 });
+      flakes.push({ x: Math.random()*canvas.width, y: 0, r: Math.random()*9+ 2, d: Math.random() + 1 });
     }
     function drawFlakes() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
