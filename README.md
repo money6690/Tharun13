@@ -205,7 +205,7 @@
         <div id="optionsContainer"></div>
         <textarea id="answerInput" placeholder="Type your answer here"></textarea>
         <div class="buttons">
-          <button id="nextBtn">Next</button>
+          <button id="nextBtn">Next<</button>
         </div>
       </div>
       <div id="summary" style="display:none;"></div>
@@ -228,7 +228,7 @@
     canvas.height = window.innerHeight;
     let flakes = [];
     function createFlake() {
-      flakes.push({ x: Math.random()*canvas.width, y: 0, r: Math.random()*9+ 2, d: Math.random() + 1 });
+      flakes.push({ x: Math.random()*canvas.width, y: 0, r: Math.random()*5+ 2, d: Math.random() + 1 });
     }
     function drawFlakes() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
